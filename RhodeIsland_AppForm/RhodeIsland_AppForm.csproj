@@ -58,20 +58,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="ReadData.cs" />
+    <Compile Include="UpdateFiles.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -89,7 +90,28 @@
     <None Include="Resources\logo03.fbaed501.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\arknights-rhodes-island-arknights-hd-wallpaper-preview.jpg" />
+    <None Include="Resources\bskill_ctrl_c_spd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bskill_ctrl_ash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bskill_ctrl_t_spd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bskill_ctrl_t_limit&amp;spd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\priesstess_icon\bg_file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\U.I\Barcode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\priesstess_icon\Medical_Record_Clue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ClassPictures\class_medic.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

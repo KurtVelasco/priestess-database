@@ -121,7 +121,28 @@
   <data name="logo03.fbaed501" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo03.fbaed501.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="arknights-rhodes-island-arknights-hd-wallpaper-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arknights-rhodes-island-arknights-hd-wallpaper-preview.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Medical_Record_Clue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\priesstess_icon\Medical_Record_Clue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bskill_ctrl_t_spd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bskill_ctrl_t_spd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bskill_ctrl_t_limit&amp;spd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bskill_ctrl_t_limit&amp;spd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bskill_ctrl_c_spd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bskill_ctrl_c_spd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg_file" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\priesstess_icon\bg_file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Barcode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\U.I\Barcode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bskill_ctrl_ash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bskill_ctrl_ash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="class_medic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\ClassPictures\class_medic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
