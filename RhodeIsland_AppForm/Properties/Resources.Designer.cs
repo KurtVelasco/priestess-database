@@ -63,9 +63,69 @@ namespace RhodeIsland_AppForm.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap arknights_rhodes_island_arknights_hd_wallpaper_preview {
+        internal static System.Drawing.Bitmap Barcode {
             get {
-                object obj = ResourceManager.GetObject("arknights-rhodes-island-arknights-hd-wallpaper-preview", resourceCulture);
+                object obj = ResourceManager.GetObject("Barcode", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bg_file {
+            get {
+                object obj = ResourceManager.GetObject("bg_file", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bskill_ctrl_ash {
+            get {
+                object obj = ResourceManager.GetObject("bskill_ctrl_ash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bskill_ctrl_c_spd {
+            get {
+                object obj = ResourceManager.GetObject("bskill_ctrl_c_spd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bskill_ctrl_t_limit_spd {
+            get {
+                object obj = ResourceManager.GetObject("bskill_ctrl_t_limit&spd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bskill_ctrl_t_spd {
+            get {
+                object obj = ResourceManager.GetObject("bskill_ctrl_t_spd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap class_medic {
+            get {
+                object obj = ResourceManager.GetObject("class_medic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -76,6 +136,16 @@ namespace RhodeIsland_AppForm.Properties {
         internal static System.Drawing.Bitmap logo03_fbaed501 {
             get {
                 object obj = ResourceManager.GetObject("logo03.fbaed501", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Medical_Record_Clue {
+            get {
+                object obj = ResourceManager.GetObject("Medical_Record_Clue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
