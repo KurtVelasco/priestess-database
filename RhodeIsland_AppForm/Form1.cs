@@ -18,6 +18,7 @@ namespace RhodeIsland_AppForm
         string FactionLocation = "";
         string ClassLocation = "";
         string SubclassLocation = "";
+        string GroupLocation = "";
         string INF = "";
         public Priestess()
         {
@@ -57,6 +58,7 @@ namespace RhodeIsland_AppForm
                     INFRate.Image = Image.FromFile(INF);
                     OpClassPic.Image = Image.FromFile(ClassLocation);
                     SubClassPic.Image = Image.FromFile(SubclassLocation);
+                    GroupPicture.Image = Image.FromFile(GroupLocation);
                    
                 }
             }
@@ -71,12 +73,11 @@ namespace RhodeIsland_AppForm
             Op_Name.Text = CompileInformation.Name;
             Profession.Text = CompileInformation.Profession;
             SubProfession.Text = CompileInformation.SubProfession;
-            Nation_Text.Text = CompileInformation.Faction;
-            OPERATORID.Text = CompileInformation.PrehabKey;
-            Nation_Text.Text = CompileInformation.NationID;
+            OPERATORID.Text = CompileInformation.PrehabKey;          
             Rarity_text.Text = CompileInformation.Sec_Class;
-            SquadText.Text = CompileInformation.Squad;
+            SquadText.Text = CompileInformation.Squad;           
             Clinical.Text = CompileInformation.Clinical;
+            NATIONTEXT.Text = CompileInformation.NationID;
         }
         private void ImageLocation(object sender, KeyEventArgs e)
         {
@@ -84,6 +85,7 @@ namespace RhodeIsland_AppForm
             FactionLocation = @"C:\Users\karin\source\repos\RhodeIsland_AppForm\RhodeIsland_AppForm\bin\Debug\FactionPictures\" + "logo_" + CompileInformation.NationID + ".png";
             ClassLocation = @"C:\Users\karin\source\repos\RhodeIsland_AppForm\RhodeIsland_AppForm\bin\Debug\ClassPictures\" + "class_" + CompileInformation.Profession + ".png";
             SubclassLocation = @"C:\Users\karin\source\repos\RhodeIsland_AppForm\RhodeIsland_AppForm\bin\Debug\SubClassPictures\" + "sub_" + CompileInformation.SubProfession + "_icon.png";
+            GroupLocation = @"C:\Users\karin\source\repos\RhodeIsland_AppForm\RhodeIsland_AppForm\bin\Debug\FactionPictures\" + "logo_" + CompileInformation.Group + ".png";
             INF = @"C:\Users\karin\source\repos\RhodeIsland_AppForm\RhodeIsland_AppForm\bin\Debug\priesstess_icon\Status_Monitor.gif";
         }
 

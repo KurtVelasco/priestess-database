@@ -22,6 +22,7 @@ namespace RhodeIsland_AppForm
         public static string Faction = "";
         public static int NumberofOps = 0;
         public static string Squad = "";
+        public static string Group = "";
         ///////////////////////////////////////
         public static string Clinical = "";
         public CompileInformation(dynamic OpData, dynamic OPProfile,int OpNumbers)
@@ -37,7 +38,12 @@ namespace RhodeIsland_AppForm
             Profession = ChoosenOperator.Value.profession;
             SubProfession = ChoosenOperator.Value.subProfessionId;
             Squad = ChoosenOperator.Value.teamdId;
-            if(ChoosenOperator.Value.teamId != null)
+            Group = ChoosenOperator.Value.groupId;
+            if (ChoosenOperator.Value.groupId == null)
+            {
+                Group = "rhodes_override";
+            }
+            if (ChoosenOperator.Value.teamId != null)
             {
                 Squad = ChoosenOperator.Value.teamId;
             }

@@ -33,16 +33,15 @@ namespace RhodeIsland_AppForm
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Priestess));
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.Clinical = new System.Windows.Forms.RichTextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.Credits = new System.Windows.Forms.Button();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.Button_Profile = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.Update_Button = new System.Windows.Forms.Button();
             this.Nation_Panel = new System.Windows.Forms.Panel();
             this.Faction = new System.Windows.Forms.PictureBox();
-            this.Nation_Text = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.Input_Name = new System.Windows.Forms.TextBox();
             this.Main_Info_Panel = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -62,7 +61,6 @@ namespace RhodeIsland_AppForm
             this.Op_Name = new System.Windows.Forms.TextBox();
             this.OPERATORID = new System.Windows.Forms.TextBox();
             this.OperatorPicture = new System.Windows.Forms.PictureBox();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.Rarity_text = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
@@ -73,14 +71,18 @@ namespace RhodeIsland_AppForm
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.Clinical_Panel = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
             this.INFRate = new System.Windows.Forms.PictureBox();
             this.INFmonitor = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.GroupPicture = new System.Windows.Forms.PictureBox();
+            this.NATION = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.NATIONTEXT = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.Credits = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.Nation_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Faction)).BeginInit();
             this.Main_Info_Panel.SuspendLayout();
@@ -92,7 +94,6 @@ namespace RhodeIsland_AppForm
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OperatorPicture)).BeginInit();
-            this.panel6.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.panel7.SuspendLayout();
@@ -100,7 +101,9 @@ namespace RhodeIsland_AppForm
             this.Clinical_Panel.SuspendLayout();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.INFRate)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GroupPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // imageList1
@@ -117,24 +120,9 @@ namespace RhodeIsland_AppForm
             this.Clinical.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Clinical.Location = new System.Drawing.Point(19, 16);
             this.Clinical.Name = "Clinical";
-            this.Clinical.Size = new System.Drawing.Size(866, 391);
+            this.Clinical.Size = new System.Drawing.Size(866, 434);
             this.Clinical.TabIndex = 24;
             this.Clinical.Text = "";
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBox2.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(390, 493);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(327, 45);
-            this.textBox2.TabIndex = 29;
-            this.textBox2.Text = "MEDICAL SUMMARY :";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel3
             // 
@@ -151,17 +139,47 @@ namespace RhodeIsland_AppForm
             this.panel3.Size = new System.Drawing.Size(334, 999);
             this.panel3.TabIndex = 30;
             // 
+            // Credits
+            // 
+            this.Credits.BackColor = System.Drawing.Color.Transparent;
+            this.Credits.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Credits.FlatAppearance.BorderSize = 0;
+            this.Credits.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Credits.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Credits.ForeColor = System.Drawing.Color.Transparent;
+            this.Credits.Image = ((System.Drawing.Image)(resources.GetObject("Credits.Image")));
+            this.Credits.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Credits.Location = new System.Drawing.Point(-4, 773);
+            this.Credits.Name = "Credits";
+            this.Credits.Size = new System.Drawing.Size(335, 107);
+            this.Credits.TabIndex = 35;
+            this.Credits.Text = "CREDITS";
+            this.Credits.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Credits.UseVisualStyleBackColor = false;
+            this.Credits.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox5.BackgroundImage = global::RhodeIsland_AppForm.Properties.Resources.class_medic;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox5.Location = new System.Drawing.Point(-21, 3);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(375, 196);
+            this.pictureBox5.TabIndex = 34;
+            this.pictureBox5.TabStop = false;
+            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Transparent;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Turquoise;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(-4, 310);
+            this.button3.Location = new System.Drawing.Point(-4, 331);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(335, 107);
             this.button3.TabIndex = 33;
@@ -175,8 +193,8 @@ namespace RhodeIsland_AppForm
             this.Button_Profile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Button_Profile.FlatAppearance.BorderSize = 0;
             this.Button_Profile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Profile.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_Profile.ForeColor = System.Drawing.Color.Turquoise;
+            this.Button_Profile.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Profile.ForeColor = System.Drawing.Color.White;
             this.Button_Profile.Image = ((System.Drawing.Image)(resources.GetObject("Button_Profile.Image")));
             this.Button_Profile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Button_Profile.Location = new System.Drawing.Point(-4, 612);
@@ -193,7 +211,7 @@ namespace RhodeIsland_AppForm
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(25, 938);
+            this.label2.Location = new System.Drawing.Point(25, 950);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(277, 29);
             this.label2.TabIndex = 29;
@@ -205,11 +223,11 @@ namespace RhodeIsland_AppForm
             this.Update_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Update_Button.FlatAppearance.BorderSize = 0;
             this.Update_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Update_Button.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Update_Button.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Update_Button.ForeColor = System.Drawing.Color.Transparent;
             this.Update_Button.Image = ((System.Drawing.Image)(resources.GetObject("Update_Button.Image")));
             this.Update_Button.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Update_Button.Location = new System.Drawing.Point(-4, 462);
+            this.Update_Button.Location = new System.Drawing.Point(-4, 473);
             this.Update_Button.Name = "Update_Button";
             this.Update_Button.Size = new System.Drawing.Size(331, 107);
             this.Update_Button.TabIndex = 2;
@@ -222,48 +240,21 @@ namespace RhodeIsland_AppForm
             // 
             this.Nation_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.Nation_Panel.Controls.Add(this.Faction);
-            this.Nation_Panel.Controls.Add(this.Nation_Text);
-            this.Nation_Panel.Controls.Add(this.label5);
             this.Nation_Panel.Location = new System.Drawing.Point(1314, 119);
             this.Nation_Panel.Name = "Nation_Panel";
-            this.Nation_Panel.Size = new System.Drawing.Size(298, 368);
+            this.Nation_Panel.Size = new System.Drawing.Size(298, 319);
             this.Nation_Panel.TabIndex = 31;
             // 
             // Faction
             // 
             this.Faction.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.Faction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Faction.Location = new System.Drawing.Point(11, 24);
+            this.Faction.Location = new System.Drawing.Point(11, 19);
             this.Faction.Name = "Faction";
-            this.Faction.Size = new System.Drawing.Size(275, 274);
+            this.Faction.Size = new System.Drawing.Size(275, 284);
             this.Faction.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Faction.TabIndex = 9;
             this.Faction.TabStop = false;
-            // 
-            // Nation_Text
-            // 
-            this.Nation_Text.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.Nation_Text.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Nation_Text.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.Nation_Text.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Nation_Text.ForeColor = System.Drawing.Color.White;
-            this.Nation_Text.Location = new System.Drawing.Point(105, 313);
-            this.Nation_Text.Name = "Nation_Text";
-            this.Nation_Text.ReadOnly = true;
-            this.Nation_Text.Size = new System.Drawing.Size(181, 39);
-            this.Nation_Text.TabIndex = 16;
-            this.Nation_Text.Text = "XXXXXXXXX";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Turquoise;
-            this.label5.Location = new System.Drawing.Point(4, 313);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(95, 39);
-            this.label5.TabIndex = 22;
-            this.label5.Text = "NATION:";
             // 
             // Input_Name
             // 
@@ -281,10 +272,10 @@ namespace RhodeIsland_AppForm
             // Main_Info_Panel
             // 
             this.Main_Info_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.Main_Info_Panel.Controls.Add(this.Rarity_text);
             this.Main_Info_Panel.Controls.Add(this.panel5);
             this.Main_Info_Panel.Controls.Add(this.OPERATORID);
             this.Main_Info_Panel.Controls.Add(this.OperatorPicture);
-            this.Main_Info_Panel.Controls.Add(this.panel6);
             this.Main_Info_Panel.Location = new System.Drawing.Point(390, 119);
             this.Main_Info_Panel.Name = "Main_Info_Panel";
             this.Main_Info_Panel.Size = new System.Drawing.Size(905, 368);
@@ -293,6 +284,9 @@ namespace RhodeIsland_AppForm
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.panel5.Controls.Add(this.NATIONTEXT);
+            this.panel5.Controls.Add(this.pictureBox8);
+            this.panel5.Controls.Add(this.NATION);
             this.panel5.Controls.Add(this.SquadText);
             this.panel5.Controls.Add(this.label8);
             this.panel5.Controls.Add(this.pictureBox4);
@@ -309,7 +303,7 @@ namespace RhodeIsland_AppForm
             this.panel5.Controls.Add(this.Op_Name);
             this.panel5.Location = new System.Drawing.Point(336, 16);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(536, 256);
+            this.panel5.Size = new System.Drawing.Size(536, 336);
             this.panel5.TabIndex = 29;
             // 
             // SquadText
@@ -318,9 +312,10 @@ namespace RhodeIsland_AppForm
             this.SquadText.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SquadText.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.SquadText.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SquadText.ForeColor = System.Drawing.Color.White;
+            this.SquadText.ForeColor = System.Drawing.Color.Red;
             this.SquadText.Location = new System.Drawing.Point(247, 196);
             this.SquadText.Name = "SquadText";
+            this.SquadText.ReadOnly = true;
             this.SquadText.Size = new System.Drawing.Size(181, 39);
             this.SquadText.TabIndex = 30;
             this.SquadText.Text = "XXXXXXXXX";
@@ -405,6 +400,7 @@ namespace RhodeIsland_AppForm
             this.SubProfession.ForeColor = System.Drawing.Color.White;
             this.SubProfession.Location = new System.Drawing.Point(247, 138);
             this.SubProfession.Name = "SubProfession";
+            this.SubProfession.ReadOnly = true;
             this.SubProfession.Size = new System.Drawing.Size(181, 39);
             this.SubProfession.TabIndex = 15;
             this.SubProfession.Text = "XXXXXXXXX";
@@ -498,26 +494,17 @@ namespace RhodeIsland_AppForm
             this.OperatorPicture.TabIndex = 0;
             this.OperatorPicture.TabStop = false;
             // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
-            this.panel6.Controls.Add(this.Rarity_text);
-            this.panel6.Location = new System.Drawing.Point(336, 282);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(536, 70);
-            this.panel6.TabIndex = 30;
-            // 
             // Rarity_text
             // 
             this.Rarity_text.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
             this.Rarity_text.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Rarity_text.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.Rarity_text.Font = new System.Drawing.Font("Bahnschrift Condensed", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rarity_text.Font = new System.Drawing.Font("Bahnschrift Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Rarity_text.ForeColor = System.Drawing.Color.White;
-            this.Rarity_text.Location = new System.Drawing.Point(22, 18);
+            this.Rarity_text.Location = new System.Drawing.Point(70, 333);
             this.Rarity_text.Name = "Rarity_text";
             this.Rarity_text.ReadOnly = true;
-            this.Rarity_text.Size = new System.Drawing.Size(293, 49);
+            this.Rarity_text.Size = new System.Drawing.Size(197, 29);
             this.Rarity_text.TabIndex = 29;
             this.Rarity_text.Text = "XXXX-XXX-XXX -XXXX";
             this.Rarity_text.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -604,9 +591,9 @@ namespace RhodeIsland_AppForm
             // 
             this.Clinical_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.Clinical_Panel.Controls.Add(this.Clinical);
-            this.Clinical_Panel.Location = new System.Drawing.Point(390, 544);
+            this.Clinical_Panel.Location = new System.Drawing.Point(390, 504);
             this.Clinical_Panel.Name = "Clinical_Panel";
-            this.Clinical_Panel.Size = new System.Drawing.Size(905, 422);
+            this.Clinical_Panel.Size = new System.Drawing.Size(905, 462);
             this.Clinical_Panel.TabIndex = 35;
             // 
             // panel9
@@ -615,10 +602,21 @@ namespace RhodeIsland_AppForm
             this.panel9.Controls.Add(this.label9);
             this.panel9.Controls.Add(this.INFRate);
             this.panel9.Controls.Add(this.INFmonitor);
-            this.panel9.Location = new System.Drawing.Point(1314, 740);
+            this.panel9.Location = new System.Drawing.Point(1314, 755);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(298, 227);
+            this.panel9.Size = new System.Drawing.Size(298, 211);
             this.panel9.TabIndex = 32;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Turquoise;
+            this.label9.Location = new System.Drawing.Point(68, 160);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(79, 39);
+            this.label9.TabIndex = 23;
+            this.label9.Text = "I.F.M : ";
             // 
             // INFRate
             // 
@@ -646,27 +644,60 @@ namespace RhodeIsland_AppForm
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // label9
+            // panel2
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Turquoise;
-            this.label9.Location = new System.Drawing.Point(68, 160);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(79, 39);
-            this.label9.TabIndex = 23;
-            this.label9.Text = "I.F.M : ";
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.panel2.Controls.Add(this.GroupPicture);
+            this.panel2.Location = new System.Drawing.Point(1314, 444);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(298, 305);
+            this.panel2.TabIndex = 32;
             // 
-            // pictureBox5
+            // GroupPicture
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.BackgroundImage = global::RhodeIsland_AppForm.Properties.Resources.class_medic;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(334, 161);
-            this.pictureBox5.TabIndex = 34;
-            this.pictureBox5.TabStop = false;
+            this.GroupPicture.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.GroupPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.GroupPicture.Location = new System.Drawing.Point(11, 16);
+            this.GroupPicture.Name = "GroupPicture";
+            this.GroupPicture.Size = new System.Drawing.Size(275, 274);
+            this.GroupPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.GroupPicture.TabIndex = 9;
+            this.GroupPicture.TabStop = false;
+            // 
+            // NATION
+            // 
+            this.NATION.AutoSize = true;
+            this.NATION.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NATION.ForeColor = System.Drawing.Color.Turquoise;
+            this.NATION.Location = new System.Drawing.Point(74, 255);
+            this.NATION.Name = "NATION";
+            this.NATION.Size = new System.Drawing.Size(95, 39);
+            this.NATION.TabIndex = 31;
+            this.NATION.Text = "NATION:";
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.BackgroundImage")));
+            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox8.Location = new System.Drawing.Point(22, 248);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(46, 46);
+            this.pictureBox8.TabIndex = 30;
+            this.pictureBox8.TabStop = false;
+            // 
+            // NATIONTEXT
+            // 
+            this.NATIONTEXT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(70)))), ((int)(((byte)(70)))));
+            this.NATIONTEXT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.NATIONTEXT.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.NATIONTEXT.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NATIONTEXT.ForeColor = System.Drawing.Color.White;
+            this.NATIONTEXT.Location = new System.Drawing.Point(247, 255);
+            this.NATIONTEXT.Name = "NATIONTEXT";
+            this.NATIONTEXT.ReadOnly = true;
+            this.NATIONTEXT.Size = new System.Drawing.Size(181, 39);
+            this.NATIONTEXT.TabIndex = 32;
+            this.NATIONTEXT.Text = "XXXXXXXXX";
             // 
             // label10
             // 
@@ -674,31 +705,12 @@ namespace RhodeIsland_AppForm
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Bahnschrift Condensed", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.IndianRed;
-            this.label10.Location = new System.Drawing.Point(25, 150);
+            this.label10.Location = new System.Drawing.Point(28, 202);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(295, 64);
             this.label10.TabIndex = 30;
             this.label10.Text = "RHODE MEDICAL\r\n";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Credits
-            // 
-            this.Credits.BackColor = System.Drawing.Color.Transparent;
-            this.Credits.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Credits.FlatAppearance.BorderSize = 0;
-            this.Credits.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Credits.Font = new System.Drawing.Font("Bahnschrift Condensed", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Credits.ForeColor = System.Drawing.Color.Transparent;
-            this.Credits.Image = global::RhodeIsland_AppForm.Properties.Resources.Medical_Record_Clue;
-            this.Credits.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Credits.Location = new System.Drawing.Point(-4, 773);
-            this.Credits.Name = "Credits";
-            this.Credits.Size = new System.Drawing.Size(335, 107);
-            this.Credits.TabIndex = 35;
-            this.Credits.Text = "CREDITS";
-            this.Credits.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Credits.UseVisualStyleBackColor = false;
-            this.Credits.Click += new System.EventHandler(this.button1_Click);
             // 
             // Priestess
             // 
@@ -707,11 +719,11 @@ namespace RhodeIsland_AppForm
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1624, 988);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.Clinical_Panel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Nation_Panel);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.Main_Info_Panel);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel7);
@@ -723,8 +735,8 @@ namespace RhodeIsland_AppForm
             this.Load += new System.EventHandler(this.Priestess_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.Nation_Panel.ResumeLayout(false);
-            this.Nation_Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Faction)).EndInit();
             this.Main_Info_Panel.ResumeLayout(false);
             this.Main_Info_Panel.PerformLayout();
@@ -737,8 +749,6 @@ namespace RhodeIsland_AppForm
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OperatorPicture)).EndInit();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -749,9 +759,10 @@ namespace RhodeIsland_AppForm
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.INFRate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.GroupPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -760,11 +771,9 @@ namespace RhodeIsland_AppForm
         private System.Windows.Forms.PictureBox Faction;
         private System.Windows.Forms.TextBox Profession;
         private System.Windows.Forms.TextBox SubProfession;
-        private System.Windows.Forms.TextBox Nation_Text;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox OperatorPicture;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.TextBox OPERATORID;
@@ -777,14 +786,12 @@ namespace RhodeIsland_AppForm
         private System.Windows.Forms.PictureBox SubClassPic;
         private System.Windows.Forms.Panel Main_Info_Panel;
         private System.Windows.Forms.TextBox Rarity_text;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button Update_Button;
         private System.Windows.Forms.Panel Nation_Panel;
         private System.Windows.Forms.TextBox Input_Name;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.TextBox OperatorNumbers;
@@ -803,8 +810,13 @@ namespace RhodeIsland_AppForm
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button Credits;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox GroupPicture;
+        private System.Windows.Forms.TextBox NATIONTEXT;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Label NATION;
+        private System.Windows.Forms.Label label10;
     }
 }
 
