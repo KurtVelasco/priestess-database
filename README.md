@@ -3,6 +3,9 @@ A Windows Formrendition of a certain gacha database WIP for Fun(RP), and an idea
 Mostly just for education and practice for using WPF for the first time
 
 Todo list:
+- Mostly just static based - will prob change it oh nvm
+
+
 - Currenttly, the branch won't work with other computers, since I haven't adapted it use it's local resources.
 - Fix the visual glitches with the picture boxes for some units.
 - Provide a means to update the images.
