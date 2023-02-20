@@ -1,5 +1,5 @@
 # priestess-database
-A WPF rendition of a certain gacha database WIP, and an idea from a certain conversation. 
+A WPF rendition of a certain gacha database WIP for Fun(RP), and an idea from a certain conversation. 
 Mostly just for education and practice for using WPF for the first time
 
 Todo list:
